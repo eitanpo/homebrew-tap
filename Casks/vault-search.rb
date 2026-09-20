@@ -6,25 +6,25 @@ cask "vault-search" do
     end
   end
 
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     on_arm do
-      sha256 "29eeb41e5f021031af2fc3bb63bd8e3f926dbf2332575ca4f1a211f60ad1cf35"
+      sha256 "e106dad743bbce34f1b082a798b72d94f0a97ad6895d524ebd23c85c339a89eb"
       url "https://github.com/eitanpo/vault-search/releases/download/v#{version}/vault-search_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "1b402efa5588018dca6a331733820b0b865004f6281a14b88ef9bf2619c2fa69"
+      sha256 "2d2d4dcf199e05ef8e4ecfafa051c25be67cd31c6669566c6dd67c72de09021f"
       url "https://github.com/eitanpo/vault-search/releases/download/v#{version}/vault-search_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "4e23845823ed3e04de879683fe3055b08712ef19b2d179993a062b778df866fa"
+      sha256 "48845ceebcd688c95b2139c27909b527d5f468aeef5355636f549aa76f5b5177"
       url "https://github.com/eitanpo/vault-search/releases/download/v#{version}/vault-search_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "f972c37418460d6b893f8fa59479a2825834edb42611f602c1dfc2ca6bbb79dd"
+      sha256 "a47ca4e00775c899b0191a9e49d03b147a5928af81d918e37b47286788c23830"
       url "https://github.com/eitanpo/vault-search/releases/download/v#{version}/vault-search_#{version}_linux_amd64.tar.gz"
     end
   end

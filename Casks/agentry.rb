@@ -6,25 +6,25 @@ cask "agentry" do
     end
   end
 
-  version "0.32.0"
+  version "0.33.0"
 
   on_macos do
     on_arm do
-      sha256 "357d65c3f2abec79fe5e4be4d8e31de834f9c1cdf0d5d97bb93f11f288b2aacb"
+      sha256 "39ff3d519f26cf83e74b7a3f3978cb1ba5c83854970fff70106f03b07ddc003a"
       url "https://github.com/eitanpo/agentry/releases/download/v#{version}/agentry_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "9a1181e52fdbdd349ecdad9e524c31abf4ceb7718f9b0a8d1a050ec038aa5fea"
+      sha256 "1b10b1b2dd021891f86b0c125b721a5e3d56797a28a4960287aee927cbe5de8f"
       url "https://github.com/eitanpo/agentry/releases/download/v#{version}/agentry_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "a6b022a6c2f036c131d6d5919dc30eddda053ea4380b4e4b5dbccfe6f18fd561"
+      sha256 "0b920f0703e8cffd731ceb1d487605112187d12689729bd8287a8e651a942881"
       url "https://github.com/eitanpo/agentry/releases/download/v#{version}/agentry_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "7d82ee9437b02d9fc00053f47ad2f14ee79dbd4417f9b80e54aae6a10e50e6d9"
+      sha256 "5155ac9db6b4330be7244f432d1557dc641279b0bebb7ee4d8ddf68f0287af08"
       url "https://github.com/eitanpo/agentry/releases/download/v#{version}/agentry_#{version}_linux_amd64.tar.gz"
     end
   end

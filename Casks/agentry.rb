@@ -6,25 +6,25 @@ cask "agentry" do
     end
   end
 
-  version "0.36.0"
+  version "0.37.0"
 
   on_macos do
     on_arm do
-      sha256 "6e1c22959a724babe0f34df7c085cb51e74214e55c770d18091a9f02247d0307"
+      sha256 "02b4804cccdb920b924f83b5ee1d9bd4f2948ee01452f4fd8acc04c53e079815"
       url "https://github.com/eitanpo/agentry/releases/download/v#{version}/agentry_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "912fd09e25e8488c73acb596fd889f86483a27579be7dd2cce303b3ef7625ff5"
+      sha256 "4a1b6199397de13643664c8eb7f4a15a7b300d1e375a8ae28d911c4bc03335ff"
       url "https://github.com/eitanpo/agentry/releases/download/v#{version}/agentry_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "c63fbb1def24e5f1bcfaa06210a59e2ff4ee0fe260322563b5aa83dcf47ff7b8"
+      sha256 "2c16ad4d3cc1bc9826c8f1e0287dc0072eb2d2c08c204b8e800319446c035811"
       url "https://github.com/eitanpo/agentry/releases/download/v#{version}/agentry_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "5873d7aebb281022438fdff323ac6979f9d4f4a8097110cdf37bb4d1b3bade88"
+      sha256 "c2b1a4f18b1991568d800a82159ded3b847dadeda3a0e2533735dbeb529d255a"
       url "https://github.com/eitanpo/agentry/releases/download/v#{version}/agentry_#{version}_linux_amd64.tar.gz"
     end
   end
@@ -39,8 +39,8 @@ cask "agentry" do
 
   binary "agentry"
   bash_completion "completions/agentry.bash"
-  fish_completion "completions/agentry.fish"
   zsh_completion "completions/agentry.zsh"
+  fish_completion "completions/agentry.fish"
 
-  # No zap stanza required
+  zap :not_required
 end
